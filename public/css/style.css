@@ -1,0 +1,566 @@
+* {
+    font-family: Helvetica;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+navbar {
+    background-color: #f1f3ff;
+}
+
+a {
+    color: black;
+}
+
+.pxc-7 {
+    padding: 10px 75px 10px 75px;
+}
+
+#navbar-content {
+    width: 30vw;
+}
+
+.navbar-brand {
+    width: 6.25rem;
+    height: 2.125rem;
+    padding-left: 12px;
+}
+
+.nav-item {
+    padding: 0.1rem 0.4rem;
+}
+
+.nav-item.cta-btn .nav-link {
+    color: #fff !important;
+    font-weight: 700 !important;
+}
+
+.navbar .nav-item .nav-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #000;
+    transition: all ease-in-out 0.2s;
+}
+
+.navbar .nav-item .nav-link:hover {
+    opacity: 0.7;
+}
+
+.cta-btn {
+    font-weight: 620 !important;
+    color: rgb(255, 255, 255) !important;
+    background: #5cb85f;
+    border-radius: 0.1rem;
+    border: 1px;
+    transition: all ease-in-out 0.2s;
+}
+
+@media (min-width: 62rem) {
+    .navbar {
+        padding: 1rem 10rem;
+        background: #f1f3ff;
+    }
+
+    .home {
+        padding-left: 10rem;
+    }
+
+    .testi-item {
+        flex-direction: row;
+        width: 100%;
+        text-align: start;
+    }
+}
+
+.home {
+    background: #f1f3ff;
+    padding-top: 1rem;
+    overflow-x: hidden;
+}
+
+.home h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.home p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+
+.home .container-fluid div {
+    flex: 1;
+}
+
+.home .cta-btn {
+    padding: 0.8rem;
+    width: fit-content;
+}
+
+.home-image img {
+    width: 100%;
+    min-height: 100%;
+}
+
+@media (min-width: 90rem) {
+    .home h2 {
+        font-size: 2.25rem;
+        line-height: 150%;
+    }
+
+    .home p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .our-services h2 {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .our-services p,
+    .our-services li {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+}
+
+.our-services {
+    padding: 6rem 0 0 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.our-services h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.our-services p,
+.our-services li {
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
+
+.our-services .service-item {
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.our-services .service-item::before {
+    content: url(../Assets/img/checkmark-icon.svg);
+}
+
+.why-us {
+    padding: 6rem 0 0 0;
+}
+
+.why-us h2 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+}
+
+.why-us .container-fluid p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+}
+
+.why-us .content {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.why-us .content .icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-us .content .icon i {
+    color: #fff;
+}
+
+.why-us .content h3 {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0;
+}
+
+.why-us .content p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin: 0;
+}
+
+.testimonial {
+    padding: 6rem 0;
+    overflow-x: hidden;
+}
+
+.testimonial>h2 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.testimonial>p {
+    font-weight: 300;
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.testi-item {
+    background: #f1f3ff;
+    width: 75%;
+    margin: auto;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+.testi-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testi-image img {
+    background-size: cover;
+    border-radius: 50%;
+    max-width: 5rem;
+}
+
+.testi-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.rating .bi-star-fill {
+    color: #f9cc00;
+    font-size: 1rem;
+}
+
+.testi-content p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.testi-content h6 {
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.testimonial-swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testi-nav-button {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.testi-button {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #c4c4c4;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testi-button:hover {
+    border: 1px solid #fff;
+    background: #5cb85f;
+}
+
+.testi-button:hover .bi {
+    color: #fff;
+}
+
+.testi-button .bi {
+    color: #222222;
+}
+
+.cta-banner .container {
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #0d28a6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta-banner h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #fff;
+    margin: 0;
+}
+
+.cta-banner p {
+    width: 60%;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #fff;
+    margin: 0;
+}
+
+.cta-banner .cta-btn {
+    width: fit-content;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.faq-section {
+    padding: 6rem 0;
+}
+
+.faq-section .title-section {
+    flex: 1;
+}
+
+.faq-section .title-section h3 {
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.faq-section .title-section p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.faq-section .question-section {
+    flex: 1;
+    gap: 1rem;
+}
+
+.faq-section .accordion-item {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+footer {
+    margin-top: 0rem;
+    padding: 2rem 0 2rem 0;
+    background-color: #fff;
+}
+
+footer .container {
+    gap: 2rem;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+footer .section-2 a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+footer .section-2 a:hover {
+    transform: scale(1.1);
+}
+
+.social-media a {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #0d28a6;
+}
+
+footer .logo {
+    width: 6.25rem;
+    height: 2.125rem;
+    background-color: #0d28a6;
+}
+
+footer .social-media a:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 62rem) {
+    .navbar {
+        padding: 1rem 10rem;
+        background: #f1f3ff;
+    }
+
+    .home {
+        padding-left: 10rem;
+    }
+
+    .testi-item {
+        flex-direction: row;
+        width: 100%;
+        text-align: start;
+    }
+}
+
+@media (min-width: 90rem) {
+    .home h2 {
+        font-size: 2.25rem;
+        line-height: 150%;
+    }
+
+    .home p {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+
+    .our-services h2 {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .our-services p,
+    .our-services li {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+}
+
+body {
+    font-family: Helvetica;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bg-aliceblue {
+    background-color: #f1f3ff;
+}
+
+.bg-button {
+    background-color: #5cb85f !important;
+}
+
+.bg-primary-darkblue {
+    background-color: #0d28a6;
+}
+
+.testimonial-img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.testimonial-rating {
+    max-height: 1rem;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: black;
+    line-height: 0rem;
+}
+
+.testimonial-media {
+    margin-top: 1.25rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 50%;
+}
+
+.testimonial-media:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 0.875rem;
+}
+
+.footer-social {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+.alert-red {
+    background-color: #fa2c5a;
+}
+
+.alert-yellow {
+    background-color: #f9cc00;
+}
+
+.alert-green {
+    background-color: #73ca5c;
+}
